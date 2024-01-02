@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practicing Headings</title>
+</head>
+<body>
+
+<h2>Exploring Different Heading Sizes</h2>
+
+<h4>Delving into the Details</h4>
+
+<h5>Getting Specific with Subheadings</h5>
+
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------
+Instructions for the user:
+
+Open the file in a text editor or IDE.
+Replace the placeholder text within the <h2>, <h4>, and <h5> tags with your own content.
+Experiment with adding more headings and text as desired.
+Save the file.
+Open the file in a web browser to see the output.
+Observe how the different heading levels create a visual hierarchy on the page.
