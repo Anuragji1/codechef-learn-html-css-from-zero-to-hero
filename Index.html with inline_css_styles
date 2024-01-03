@@ -1,0 +1,53 @@
+Statement) So far, we have just focused on HTML.
+We have our content on the page - however, we are yet to 'beautify' it.
+
+Web developers use CSS to style the content on a web page.
+It is used to modify font types, font sizes, colors, images, content position and a lot more.
+
+It is possible to write CSS code directly within HTML - this is known as CSS Inline styles.
+Review the following syntax
+
+<p style='color: blue; font-size: 16px;'>Let us learn CSS!</p>
+The paragraph above has a 'style' attribute
+The style attribute has 2 declarations - color: blue and font-size: 16px
+Task
+In the index.html - make the following changes and check the change in output.
+
+Update <h2> on line 7 as <h2 style='color: blue; font-size: 16px;'>
+Update <ol> on line 9 as <ol style='color: blue; font-size: 16px;'>
+Go ahead and experiment with color and font size options of your choice.
+
+------------------------------------------------------------------------------------
+SOLUTION= <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My recent trip to Greece</title>
+</head>
+<body>
+  <header>
+    <h1>My recent trip to Greece</h1>
+  </header>
+
+  <main>
+    <h2 style='color: blue; font-size: 16px;'>Overview</h2>
+    <h3>
+      <ol style='color: blue; font-size: 16px;'>
+        <li>Greece</li>
+        <li>Trip Options</li>
+        <li>Trip Itinerary</li>
+      </ol>
+    </h3>
+
+    </main>
+
+  <footer>
+    <p>&copy; 2023 Hrishikesh Kelkar's page. All rights reserved. <br> Send us your feedback at help@codechef.com</p>
+  </footer>
+</body>
+</html>
+
+--------------------------
+Key changes:
+
+Line 7: The <h2> heading now has inline styles color: blue; font-size: 16px; to make it blue and 16px in size.
+Line 9: The <ol> list also has the same inline styles to make the list items blue and 16px in size.
