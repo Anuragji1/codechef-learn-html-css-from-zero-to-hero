@@ -1,0 +1,15 @@
+Statement) The following HTML code is trying to change the color of the heading, but fails to do so.
+Can you debug this error?
+
+<head>
+  <style>
+    <h1 style="color:blue;">Why am I incorrect?</h1>
+  </style>
+</head> 
+
+Select one of the following options.
+The syntax of the color property is incorrect - it should be colour.
+The overall syntax is incorrect. It has been written in HTML instead of CSS inside the <style> element. The <h1> heading will not be displayed since it is inside the <head> block.
+The opening and closing <style> tags are not required. Just the inline HTML syntax is sufficient.
+
+SOLUTION = The correct answer is: The overall syntax is incorrect. It has been written in HTML instead of CSS inside the <style> element. The <h1> heading will not be displayed since it is inside the <head> block.
