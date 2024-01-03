@@ -1,0 +1,72 @@
+Statement) Inline styles were a quick way of beautifying HTML, but they are rarely used by Web developers.
+Can you think of any reasons?
+
+If you want to style multiple elements (for example <section> or <h2> elements) which should have the same format - you will need to go and style each section or heading
+Every time a new <section> or <h2> element is added - you will need to remember to add the same style element to it as well
+Instead of the above, we can create the style element inside the <head> element of the HTML using the following syntax
+
+<head>
+  <style>
+    h1 {
+      color: blue;
+      font-size: 16px;
+    }
+  </style>
+</head>
+Task
+In the previous problem, we used the following inline styling.
+
+<h2 style='color: blue; font-size: 16px;'>
+<ol style='color: blue; font-size: 16px;'>
+Let us convert the same into an internal stylesheet using the syntax above.
+
+Add styling for the <h2> and the <ol> elements to the <head>
+
+----------------------------------------------------------------------------------------
+SOLUTION = <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My recent trip to Greece</title>
+  <style>
+    h2 {
+      color: blue;
+      font-size: 16px;
+    }
+
+    ol {
+      color: blue;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My recent trip to Greece</h1>
+  </header>
+
+  <main>
+    <h2>Overview</h2> <h3>
+      <ol> <li>Greece</li>
+        <li>Trip Options</li>
+        <li>Trip Itinerary</li>
+      </ol>
+    </h3>
+
+    </main>
+
+  <footer>
+    </footer>
+</body>
+</html>
+---------------------------------------------------------------------
+
+Key changes:
+
+Inline styles removed: The style attributes have been removed from the <h2> and <ol> elements.
+Internal stylesheet added: The <style> element has been added within the <head> section to define styles for h2 and ol elements.
+Consistent styling: Now, all h2 headings and ordered lists (ol) throughout the document will automatically have blue text and a font size of 16px.
+Advantages of internal stylesheets:
+
+Maintainability: Styles are defined in one place, making it easier to manage and update the overall look and feel of the website.
+Consistency: Ensures consistent styling across multiple elements of the same type.
+Organization: Keeps HTML and CSS code separate for better readability and structure.
