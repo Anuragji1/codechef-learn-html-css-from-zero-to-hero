@@ -1,0 +1,31 @@
+Statement ) The following HTML code is trying to change the fontsize of the paragraph text, but fails to do so.
+Why?
+
+<p fontsize="16px";>Why am I wrong?</p>
+
+Select one of the following options.
+Font size cannot be 16 px. It needs to be 16.
+The value of fontsize should be 'Arial' or 'Times New Roman'
+The font-size attribute is incorrect. 
+The correct syntax is <p style = 'font-size: 16px;'>Why am I wrong?</p>
+--------------------------------------------------------------------------
+
+SOLUTION = 
+The correct answer is: The font-size attribute is incorrect. The correct syntax is <p style='font-size: 16px;'>Why am I wrong?</p>.
+
+Explanation:
+
+Incorrect attribute: The HTML attribute fontsize does not exist. To style elements using CSS, you need to use the style attribute.
+Correct syntax: The style attribute allows you to apply inline CSS styles directly within HTML elements. The correct syntax is style='property: value;'.
+Property and value: In this case, the property you want to set is font-size, and the value is 16px.
+
+HTML Code:- <p style='font-size: 16px;'>Why am I wrong?</p>
+
+
+Key points:
+
+HTML attributes define additional information about elements, but they don't handle styling.
+CSS is responsible for styling elements, and it can be applied inline (using the style attribute), internally (within a <style> block in the HTML document), or externally (in a separate CSS file).
+The font-size property controls the size of the text, and it can be specified in various units like pixels (px), points (pt), or percentages (%).
+
+------------------------------------------------
