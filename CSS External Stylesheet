@@ -1,0 +1,67 @@
+Statement) Instead of creating an internal stylesheet, web developers will normally separate the CSS code into a separate file - an external stylesheet - and maintain the HTML and CSS as separate files.
+
+Why is this beneficial?
+
+Reusability: With an external stylesheet, you can define styles once and apply them to multiple HTML pages. This promotes consistency across your website, ensuring that elements such as headers, paragraphs, and links look the same throughout
+Efficiency: When using an external stylesheet, the CSS file is cached by the web browser after the first request. Subsequent page loads do not require downloading the CSS file again, resulting in faster page rendering
+Collaboration: When working on a web project with multiple developers or designers, using an external stylesheet allows for better collaboration. Different team members can work on the CSS separately, without interfering with each other's HTML files. This promotes parallel development and reduces the chances of code conflicts
+Browser compatibility: You can use CSS vendor prefixes and feature detection techniques within the external stylesheet to handle browser-specific implementations
+Task
+In the previous problem, we created an internal stylesheet using the <style> element inside the index.html file.
+Do the following to create your external stylesheet
+
+Copy only the contents of <style> block (except the style tag) from the index.html file to style.css file to check the output
+Delete the <style> block completely from the index.html file
+
+-------------------------------------------------------------------------------------------------------------------------------
+SOLUTION = INDEX.html :- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My recent trip to Greece</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My recent trip to Greece</h1>
+  </header>
+
+  <main>
+    <h2>Overview</h2>
+    <h3>
+      <ol>
+        <li>Greece</li>
+        <li>Trip Options</li>
+        <li>Trip Itinerary</li>
+      </ol>
+    </h3>
+
+    </main>
+
+  <footer>
+    </footer>
+</body>
+</html>
+
+---------------------------------------------------------
+style.css = h2 {
+  color: blue;
+  font-size: 16px;
+}
+
+ol {
+  color: blue;
+  font-size: 16px;
+}
+------------------------------------------------------
+Key changes:
+
+External stylesheet linked: The <link rel="stylesheet" href="style.css"> tag has been added within the <head> section of index.html to link the external CSS file.
+Internal stylesheet removed: The <style> block has been removed from index.html as the styles are now in a separate file.
+Advantages of external stylesheets:
+
+Reusability: Styles can be applied to multiple HTML pages by linking the same CSS file.
+Efficiency: Browser caching improves page loading speed.
+Maintainability: CSS styles are easier to manage and update in a separate file.
+Organization: Improves code structure and separation of concerns.
+Collaboration: Facilitates teamwork and parallel development.
+Browser compatibility: Allows for CSS vendor prefixes and feature detection.
